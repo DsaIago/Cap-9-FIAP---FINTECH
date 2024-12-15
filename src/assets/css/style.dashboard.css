@@ -1,0 +1,476 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --title-icon-color: #fff;
+}
+
+body{
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+.dashboard{
+    position: relative;
+    top: -4rem;
+    left: -1.5rem;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    width: 166vh;
+    padding: 25px 25px;
+    transition: var(--tran-05);
+}
+
+@media (max-width: 915px) {
+    .dashboard{
+        
+        width: 113%;
+      
+    }
+    body{
+        width: 100%;
+        background-color: #1a1a1a;
+    }
+}
+
+
+
+.dash-content .title{
+    display: flex;
+    align-items: center;
+    margin: 60px 0 30px 0;
+    
+}
+.dash-content .title i{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: #5fa07a;
+    border-radius: 6px;
+    color: var(--title-icon-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.dash-content .title .text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.control input {
+   
+border-radius: 100px;
+border: #ffffff;
+
+  
+}
+
+.column .input1{
+    border-radius: 100px;
+    border: #272727;
+}
+
+
+
+.boxes .box1 .label{
+    color: #e7e7e7;
+}   
+
+
+.boxes   .input{
+    background-color: #ffffff;
+}
+
+
+.column  .input1{
+   color: #e7e7e7;
+    
+}
+
+.dash-content .boxes .box{
+    flex-direction: column;
+    width: 100%;
+    /* box-shadow: 0 0 25px 10px #555; */
+    /* border: 2px solid #f8f8f8; */
+    padding: 15px 20px;
+    background-color: #333333;
+    
+  
+}
+
+
+
+
+
+/* filter */
+.boxes  .box .ocultar{
+    display: none;
+
+}
+/* FIM filter */
+
+
+
+
+/* table propostas */
+
+.outer-wrapper {
+    margin: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    /* border: 1px solid #f8f8f8; */
+    margin-top: 0;
+    color: #333;
+    
+
+
+
+    
+}
+.pl-3{
+    color: #e7e7e7;
+}
+
+.table-wrapper {
+    
+    overflow-y: auto;
+    overflow-x: auto;
+    height: fit-content;
+    max-height: 66.4vh;
+    margin-top: 100px;
+    margin: 10px;
+    padding-bottom: 30%;
+    background-color: #333;
+}
+
+
+.outer-wrapper .table-wrapper .table {
+    
+    min-width: max-content;
+    border-collapse: separate;
+    border-spacing: 0px;    
+    background-color: #333;
+}
+
+
+thead  > tr {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+ }
+
+th > span{
+    color: #e7e7e7;
+}
+
+
+
+tr > td{
+    color: #e7e7e7;
+}
+/* FIM table propostas */
+
+
+
+
+/* user */
+.outer-wrapper .table-wrapper .table{
+        width: 100%;
+        margin-left: 1%;
+}
+
+
+#user{
+    max-height: 50vh;
+    margin-top: 50px;
+    margin: 1px;
+    padding-bottom: 20%;
+    background-color: #333;
+    overflow-x: hidden;
+}
+
+
+
+
+
+@media (max-width: 1001px){
+    #user{
+        max-height: 50vh;
+        margin-top: 50px;
+        margin: 1px;
+        padding-bottom: 20%;
+        background-color: #333;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+}
+
+
+/*  */
+
+
+
+
+
+
+
+
+/* Simular CC */
+.boxes .box .labelcc {
+    color: #e7e7e7;
+}
+
+#center{
+    font-size: 30px;
+    display: grid; 
+    place-items: center;    
+}
+
+
+.boxes .box .cpf-parcela{
+    
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+
+select{
+ 
+    width:650px
+   
+}
+
+
+
+
+
+
+.columns  .button{
+    right: 2.5rem;
+    border-radius: 100px;
+}
+
+
+
+
+@media (max-width: 560px){
+    .boxes .box .cpf-parcela{
+    
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #center{
+        font-size: 18px;
+        display: grid; 
+        place-items: center;    
+    }
+
+    .boxes .box .valor{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    select{
+        
+         width:25vh;
+        
+     }
+     
+    .columns .button{
+        right: -15%;
+        width:27vh;
+        border-radius: 100px;
+     }
+     
+     
+
+}
+
+/* FIM Simular CC */
+
+
+
+
+
+/* Simular FGTS */
+
+.dash-content .card{
+    background-color: #333333;
+}
+
+.dash-content .label{
+    color: #e7e7e7;
+}
+
+select{
+    width:650px
+}
+
+
+.dash-content   .input{
+
+    background-color: #4d4d4d;
+}
+
+.dash-content  input::placeholder  {
+    color: #b4b4b4;
+}
+
+.dash-content .button-consultar {
+    right: 0rem;
+    border-radius: 100px;
+}
+
+
+
+
+.box table{
+    background-color: #333333;
+} 
+.box table thead th{
+    color: #e7e7e7;
+} 
+
+
+.box button{
+    border-radius: 100px;
+}
+
+
+/*  */
+
+.app-header{
+    background-color: #333333;
+}
+
+
+.page-wrapper .navbar{
+    background-color: #333333;
+}
+
+
+.page-wrapper .navbar .uil{
+    color:#ffffff ;
+}
+
+
+
+.page-wrapper .left-sidebar{
+    background-color: #ffffff;
+}
+
+aside .sidebar-nav > .hide-menu{
+    background-color: #ffffff;
+}
+
+
+
+.page-wrapper .ti{
+    color:#ffffff ;
+}
+
+.page-wrapper .left-sidebar{
+    background-color:#333;
+    border: none;
+}
+
+
+.page-wrapper .left-sidebar .hide-menu{
+    color:#ffffff ;
+}
+
+.page-wrapper img {
+    margin-top: 10px; 
+}
+ 
+.sidebar-nav ul .sidebar-item.selected>.sidebar-link, .sidebar-nav ul .sidebar-item.selected>.sidebar-link.active, .sidebar-nav ul .sidebar-item>.sidebar-link.active {
+    background-color: #5fa579;
+    
+}
+
+
+
+.sidebar-nav .fa{
+    color: #ffffff;
+}
+
+
+
+
+
+/* prolife */
+.app-header .dropdown-menu{
+    background-color: #333;
+}
+
+
+.app-header .dropdown-menu i{
+    color: #5fa07a;
+}
+
+.app-header .dropdown-menu p{
+    color: #ffffff;
+}
+
+
+.app-header .dropdown-menu .dropdown-item:hover{
+    background-color: #4d4d4d;
+}
+
+
+
+.left-sidebar .sidebar-item:hover{
+    background-color: #333;
+    border-radius: 9px;
+}
+
+/*  */
+
+
+
+/* Cadastrar */
+
+
+.dash-content .card h3{
+    color: #ffffff;
+}
+
+
+.card .input1{
+    
+    border: #272727;
+    border-radius: 100px;
+   
+}
+.card .input{
+    color: #e7e7e7;
+  
+   
+}
+
+
+.card .select{
+    border-radius: 100px;
+    width: 100%;
+   
+}
+
+
+.card-content{
+    width:100%;
+}
